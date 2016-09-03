@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+html {
+    background-color: #4f5257;
+    background-image: url(bg.png);
+    height: 100%;
+    width: 100%;
+}
+
+.spinner {
+    height:297px;
+    width:302px;
+    background-image: url(spinner.png);
+    animation-name: spin;
+    background-repeat: no-repeat;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-left: 530px;
+    margin-top: 150px;
+}
+
+.right-content {
+    font-family: Open Sans, sans-serif;
+    font-size: 50px;
+    color: white;
+    width:50%;
+    text-align: center;
+    float:right;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0%);	
+	}
+	50% {
+		transform: translateY(8%);	
+	}	
+	100% {
+		transform: translateY(0%);
+	}			
+}
